@@ -22,7 +22,6 @@ def solution(array):
     
     # pre_dict : 각 요소 ( key ) 별 등장횟수 ( value ) 를 dict 형태 저장
     # max_value_count : 요소의 등장횟수 중 최대값
-    # dict 형태의 데이터에서 value 를 기반으로 key 를 뽑아내는 패턴 코드
     return dict((v,k) for k,v in pre_dict.items()).get(max_value_count)
     
     
