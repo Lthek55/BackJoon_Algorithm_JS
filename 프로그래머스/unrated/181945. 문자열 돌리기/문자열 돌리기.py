@@ -1,0 +1,1 @@
+list(map(print,list(input())))
