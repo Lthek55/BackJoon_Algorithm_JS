@@ -1,0 +1,10 @@
+from math import ceil
+
+def solution(price):
+    if price >= 500000:
+        return price - ceil(price * 0.2)
+    if price >= 300000:
+        return price - ceil(price * 0.1)
+    if price >= 100000:
+        return price - ceil(price * 0.05)
+    return price
