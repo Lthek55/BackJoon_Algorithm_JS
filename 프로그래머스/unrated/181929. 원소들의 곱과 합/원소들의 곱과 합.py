@@ -1,4 +1,4 @@
-from functools import reduce
+from numpy import prod
 
 def solution(num_list):
-    return 1 if sum(num_list)**2 > reduce((lambda x,y: x*y),num_list) else 0
+    return 1 if sum(num_list)**2 > prod(num_list) else 0
